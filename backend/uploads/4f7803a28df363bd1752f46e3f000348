@@ -1,0 +1,12 @@
+workflow OrderProcessing {
+    action ReceiveOrder() by AI;
+    action ValidateOrder() by Human;
+    action ProcessPayment() by AI;
+    action ShipOrder() by Human;
+    action CancelOrder() by AI;
+    
+    ReceiveOrder -> ValidateOrder;
+    ValidateOrder -> ProcessPayment;
+    ValidateOrder -> CancelOrder;
+    ProcessPayment -> ShipOrder;
+}
