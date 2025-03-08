@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.diagram-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  background-color: #f9f9f9;
+}
